@@ -1,5 +1,5 @@
 # PLAYWRIGHT E2E TESTING WITH Backstage
-Yes, if your Backstage application uses OAuth for authentication, you'll need to account for that in your test. 
+if your Backstage or any other application uses OAuth for authentication, you'll need to account for that in your playwright test. 
 There are a few approaches you can take to handle OAuth authentication in your Playwright tests:
 
 ## Programmatic login (recommended):
@@ -26,10 +26,10 @@ Redirection: After successful sign-in, the user is redirected to the dashboard.
 ### Running Tests 
 
 1. Run the auth test once to set up the auth state: 
-npx playwright test -g "authenticate"
+`npx playwright test -g "authenticate"`
 
 2. Run all tests: 
-npx playwright test
+`npx playwright test`
 
 
 ### Best Practices 
